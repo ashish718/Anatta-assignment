@@ -10,8 +10,6 @@ const {fetchProduct}  = require('./utils/shopify.graphql')
 app.use(cors());
 app.use(express.json());
 
-
-
 var args = process.argv;
 
 if (args.includes('-name')) {
@@ -35,8 +33,6 @@ async function fetchProductByArg (title){
     }
 
 }
-
-
 
 //API to search product http://localhost:8000/product?title=test
 app.get("/product", async (req, res) => {
